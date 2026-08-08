@@ -2,16 +2,37 @@
 <html>
 <head>
     <title>Click Me</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 20px 50px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-<button onclick="rickroll()">Click Me</button>
+    <button onclick="rickroll()">CLICK ME</button>
 
-<script>
-function rickroll() {
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
-}
-</script>
+    <script>
+        function rickroll() {
+            window.open(
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "_blank"
+            );
+        }
+    </script>
 
 </body>
 </html>
