@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Virus Prank</title>
+    <title>Jhun Rey Pogi</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             background: black;
@@ -14,7 +18,7 @@
 
         #warning {
             color: red;
-            font-size: 35px;
+            font-size: 42px;
             font-weight: bold;
             text-align: center;
             margin-top: 40px;
@@ -25,6 +29,10 @@
             padding: 20px;
             height: 60vh;
             overflow: hidden;
+            text-align: center;
+            font-size: 30px;
+            line-height: 1.6;
+            font-weight: bold;
         }
 
         button {
@@ -46,9 +54,10 @@
             color: red;
             border: 3px solid red;
             padding: 25px;
-            font-size: 25px;
+            font-size: 30px;
             font-weight: bold;
             z-index: 999;
+            text-align: center;
             animation: shake 0.15s infinite;
         }
 
@@ -59,9 +68,17 @@
         }
 
         @keyframes shake {
-            0% { transform: translate(2px, 2px); }
-            50% { transform: translate(-2px, -2px); }
-            100% { transform: translate(2px, -2px); }
+            0% {
+                transform: translate(2px, 2px);
+            }
+
+            50% {
+                transform: translate(-2px, -2px);
+            }
+
+            100% {
+                transform: translate(2px, -2px);
+            }
         }
     </style>
 </head>
@@ -81,12 +98,13 @@
 let terminal = document.getElementById("terminal");
 
 let messages = [
-    "[CRITICAL] Virus detected",
-    "[WARNING] Scanning system...",
-    "[ERROR] Unknown process detected",
-    "[CRITICAL] System compromised",
-    "[WARNING] Security failure",
-    "[ERROR] Recovery failed"
+    "[CRITICAL] VIRUS DETECTED",
+    "[WARNING] SCANNING SYSTEM...",
+    "[ERROR] UNKNOWN PROCESS DETECTED",
+    "[CRITICAL] SYSTEM COMPROMISED",
+    "[WARNING] SECURITY FAILURE",
+    "[ERROR] RECOVERY FAILED",
+    "[CRITICAL] UNAUTHORIZED ACCESS"
 ];
 
 setInterval(function() {
@@ -98,12 +116,11 @@ setInterval(function() {
 
     terminal.appendChild(line);
 
-    if (terminal.children.length > 20) {
+    if (terminal.children.length > 12) {
         terminal.removeChild(terminal.firstChild);
     }
 
 }, 300);
-
 
 function stopPrank() {
 
@@ -115,7 +132,6 @@ function stopPrank() {
 
 }
 
-
 function createPopup(text) {
 
     let popup = document.createElement("div");
@@ -124,7 +140,7 @@ function createPopup(text) {
     popup.textContent = text;
 
     popup.style.left =
-        Math.random() * 65 + 10 + "%";
+        Math.random() * 60 + 15 + "%";
 
     popup.style.top =
         Math.random() * 60 + 10 + "%";
@@ -134,10 +150,9 @@ function createPopup(text) {
     setTimeout(function() {
         popup.remove();
     }, 2000);
-
 }
 
 </script>
 
 </body>
-    </html>
+</html>
