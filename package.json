@@ -1,0 +1,9 @@
+{
+  "name": "studymate-ai-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A browser-only StudyMate practice quiz prototype",
+  "scripts": {
+    "check": "node --check quiz-generator.js && node --check app.js"
+  }
+}
